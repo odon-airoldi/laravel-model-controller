@@ -11,9 +11,7 @@
         @foreach ( $movies as $movie )
 
             <div class="p-4 border border-gray-200 rounded">
-                <x-card>
-
-                    {{ $movie['title'] }}<br>
+                <x-card :title="$movie['title']" :vote="$movie['vote']">
 
                 </x-card>
             </div>
