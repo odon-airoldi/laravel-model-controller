@@ -3,20 +3,22 @@
 
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Movies')
 
 @section('content')
 
-ciaoo
+    <div class="grid grid-cols-4 gap-4">
+        @foreach ( $movies as $movie )
 
-<x-card>
-    Carddddd
-</x-card>
+            <div class="p-4 border border-gray-200 rounded">
+                <x-card>
 
-@foreach ( $movies as $movie )
+                    {{ $movie['title'] }}<br>
 
-    {{ $movie['title'] }}<br>
+                </x-card>
+            </div>
 
-@endforeach
+        @endforeach
+    </div>
 
 @endsection
