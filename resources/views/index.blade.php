@@ -12,7 +12,7 @@
 
             <div class="p-4 border border-gray-200 rounded">
                 <x-card :title="$movie['title']" :vote="$movie['vote']">
-
+                    Movie:
                 </x-card>
             </div>
 
